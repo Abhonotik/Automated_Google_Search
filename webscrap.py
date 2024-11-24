@@ -19,7 +19,7 @@ def google_search(query, num_results=10):
 
     # Debugging: Print the response text to verify its content
     print("Response Status Code:", response.status_code)
-    print("Response Content (Preview):", response.text[:1000])
+    print("Response Content (Preview):", response.text[:100])
 
     soup = BeautifulSoup(response.text, "html.parser")
 
